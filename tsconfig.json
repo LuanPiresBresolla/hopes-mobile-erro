@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@config/*": ["./src/config/*"],
+      "@screens/*": ["./src/screens/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@errors/*": ["./src/errors/*"],
+      "@services/*": ["./src/services/*"],
+      "@dtos/*": ["./src/dtos/*"],
+    }
+  },
+  "extends": "expo/tsconfig.base"
+}

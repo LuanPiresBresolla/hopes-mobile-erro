@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 0.45.1"
+  },
+  "build": {
+    "development": {
+      "distribution": "internal",
+      "android": {
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "ios": {
+        "buildConfiguration": "Debug"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "API_URL": "https://api.hopes.app.br"
+      }
+    },
+    "production": {
+      "env": {
+        "API_URL": "https://api.hopes.app.br"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
